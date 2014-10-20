@@ -29,6 +29,10 @@ a.navbar-brand {
   color: $text-color;
 }
 
+a.navbar-brand p:hover {
+  color: rgb(118, 240, 19);
+}
+
 .feather-logo {
   width: 12px;
   height: 18px;
