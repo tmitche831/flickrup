@@ -1,0 +1,46 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ */
+
+@import 'colors';
+
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+
+img.photo-preview {
+  width: 75px;
+  height:75px;
+  border-bottom: 3px solid $body-bg;
+}
+
+a.navbar-brand {
+  font-weight: 100;
+  font-size: 22px;
+  color: $text-color;
+}
+
+.feather-logo {
+  width: 12px;
+  height: 18px;
+}
+
+.photo-fullview {
+  border: 1px solid $fullview-border-color;
+  border-radius: 2px;
+  padding: 15px 0;
+  margin-bottom: 5px;
+
+  img {
+    border-radius: 2px;
+  }
+}

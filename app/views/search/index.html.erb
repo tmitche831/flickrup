@@ -1,0 +1,17 @@
+<% content_for(:page_styles) do %>
+	<%= stylesheet_link_tag :search, media: :all %>
+<% end %>
+
+<div class="text-center">
+	
+	<h1>Search Flickr!</h1>
+
+	<%= form_tag photos_path, method: :get, class: 'form-inline' do %>
+
+	<div class="form-group">
+		<%= text_field_tag :q, nil, id: 'search-field', class: 'form-control input-lg', size: 40, required: true %>
+		<%= submit_tag 'Search', class: 'btn btn-lg btn-success' %>
+	</div>
+
+	<% end %>
+</div>

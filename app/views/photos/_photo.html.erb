@@ -1,0 +1,3 @@
+<%= link_to photo_path(id: photo.id) do %>
+  <%= image_tag photo.square(75).source_url, class: 'photo-preview', title: photo.title %>
+<% end %>

@@ -1,0 +1,9 @@
+<div class="container">
+	<div class="photo-fullview text-center">
+		<%= image_tag @photo.large(1024).source_url, title: @photo.title %>
+	</div>
+
+	<p>
+		<%= link_to 'Back', :back %>
+	</p>
+</div>

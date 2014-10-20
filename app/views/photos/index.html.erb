@@ -1,0 +1,9 @@
+<div class="container">
+	<% @photos.in_groups_of(14) do |photo_group| %>
+		<%= render partial: 'photo', collection: photo_group.compact, as: :photo %>
+	<% end %> 
+
+	<div class="text-center">
+		<%= will_paginate @photos %>
+	</div>
+</div>
